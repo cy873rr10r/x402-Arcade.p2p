@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0f1020;
+  --panel: #11121a;
+  --neon: #ffd54a;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(ellipse at 10% 10%, rgba(255,213,74,0.06), transparent 10%),
+              radial-gradient(ellipse at 90% 90%, rgba(255,184,107,0.04), transparent 10%),
+              var(--bg);
+  color: #fff;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
